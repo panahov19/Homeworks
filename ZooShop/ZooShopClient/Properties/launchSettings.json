@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ZooShopClient": {
+      "commandName": "Project",
+      "hotReloadEnabled": false
+    }
+  }
+}
