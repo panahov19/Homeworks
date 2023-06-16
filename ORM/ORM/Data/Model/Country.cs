@@ -31,5 +31,12 @@ namespace ORM.Data.Model
         [Required]
         public uint GDP { get; set; }
 
+        [Required]
+        public string President { get; set; }
+
+        [Required]
+        public string Hymn { get; set;}
+
+
     }
 }

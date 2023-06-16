@@ -24,16 +24,20 @@ namespace ORM.Migrations
 
             modelBuilder.Entity("ORM.Data.Model.Country", b =>
                 {
-                    b.Property<int>("Area")
-                        .HasColumnType("int");
+                    b.Property<long>("Area")
+                        .HasColumnType("bigint");
 
                     b.Property<DateTime>("FoundationDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("GDP")
-                        .HasColumnType("int");
+                    b.Property<long>("GDP")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("GovernmentType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Hymn")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -45,8 +49,12 @@ namespace ORM.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Population")
-                        .HasColumnType("int");
+                    b.Property<long>("Population")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("President")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.ToTable("Countries");
                 });
