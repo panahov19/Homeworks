@@ -5,25 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ORM_project"
         mc:Ignorable="d"
-        Title="Coutries" Height="450" Width="586">
+        Title="Country info" Height="450" Width="586">
     <Grid>
-        <DataGrid RowStyle="{DynamicResource DataGridRowStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" SelectionChanged="DataGrid_SelectionChanged">
-            <DataGrid.Columns>
-                <DataGridTextColumn
+        <Grid>
+            <DataGrid RowStyle="{DynamicResource DataGridRowStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" SelectionChanged="DataGrid_SelectionChanged" Margin="0,0,0,50">
+                <DataGrid.Columns>
+                    <DataGridTextColumn
                     Header="Name"/>
-                <DataGridTextColumn
+                    <DataGridTextColumn
                     Header="Foundation Date"/>
-                <DataGridTextColumn
+                    <DataGridTextColumn
                     Header="Government type"/>
-                <DataGridTextColumn
+                    <DataGridTextColumn
                     Header="Map (link)"/>
-                <DataGridTextColumn
+                    <DataGridTextColumn
                    Header="Population" />
-                <DataGridTextColumn
+                    <DataGridTextColumn
                    Header="Area" />
-                <DataGridTextColumn
+                    <DataGridTextColumn
                    Header="GDP" />
-            </DataGrid.Columns>
-        </DataGrid>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Name="AZ_btn" Content="A-Z" HorizontalAlignment="Left" Margin="456,393,0,0" VerticalAlignment="Top" Width="100"/>
+            <Button Name="GDP_btn" Content="GDP" HorizontalAlignment="Left" Margin="293,393,0,0" VerticalAlignment="Top" Width="100"/>
+            <Button Name="P_btn" Content="Population" HorizontalAlignment="Left" Margin="133,393,0,0" VerticalAlignment="Top" Width="100"/>
+            <Label Content="Sort by :" HorizontalAlignment="Left" Margin="28,387,0,0" VerticalAlignment="Top"/>
+        </Grid>
+
+
+        <Grid Margin="0,0,0,50">
+
+        </Grid>
+
     </Grid>
 </Window>

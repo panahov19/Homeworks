@@ -10,11 +10,11 @@ using Microsoft.Extensions.Configuration;
 
 namespace ORM_project.Model
 {
-    public class CountryContext :DbContext
+    public class CountryDbContext :DbContext
     {
-        public DbSet<Countries> Countries { get; set; }
+        public DbSet<Country> Countries { get; set; }
 
-        public CountryContext()
+        public CountryDbContext()
         {
 
         }

@@ -4,11 +4,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
+
 
 namespace ORM_project.Model
 {
-    public class Countries
+    public class Country
     {
         [Required]
         public string Name { get; set; }
